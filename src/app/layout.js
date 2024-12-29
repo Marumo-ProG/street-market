@@ -4,6 +4,7 @@ import "./globals.css";
 // Components
 import SocialNavbar from "../common/components/SocialNavbar";
 import SearchBarNav from "../common/components/SearchBarNav";
+import CategoryBar from "../common/components/CategoryBar";
 
 // Theming
 import { ThemeProvider } from "@mui/material/styles";
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
                 {/* <ThemeProvider theme={theme}> */}
                 <SocialNavbar />
                 <SearchBarNav />
+                <CategoryBar />
                 {/* </ThemeProvider> */}
             </body>
         </html>
