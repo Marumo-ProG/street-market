@@ -24,6 +24,7 @@ const SocialNavbar = () => {
             justifyContent={"space-between"}
             px={PageGutter}
             alignItems={"center"}
+            borderBottom={"1px solid #fff"}
         >
             <Stack>
                 <Typography variant="body" sx={{ color: Colors.white }}>
