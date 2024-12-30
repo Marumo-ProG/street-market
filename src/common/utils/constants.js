@@ -4,6 +4,7 @@ export const Colors = {
     greyLight: "#F2F4F5",
     black: "#000000",
     medGrey: "#5F6C72",
+    orange: "#FA8232",
 };
 
 export const PageGutter = "8%";

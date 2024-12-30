@@ -1,5 +1,8 @@
 // "user client";
 import "./globals.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 // Components
 import SocialNavbar from "../common/components/SocialNavbar";
@@ -23,6 +26,7 @@ export default function RootLayout({ children }) {
                 <SocialNavbar />
                 <SearchBarNav />
                 <CategoryBar />
+                {children}
                 {/* </ThemeProvider> */}
             </body>
         </html>

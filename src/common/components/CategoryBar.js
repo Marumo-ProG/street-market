@@ -24,8 +24,9 @@ const CategoryBar = () => {
             justifyContent={"space-between"}
             px={PageGutter}
             alignItems={"center"}
+            borderBottom={"1px solid " + Colors.medGrey}
         >
-            <Stack direction={"row"} spacing={2} alignContent={"center"}>
+            <Stack direction={"row"} spacing={3} alignContent={"center"}>
                 <Button
                     variant="outlined"
                     sx={{
