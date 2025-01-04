@@ -9,7 +9,7 @@ import Slider from "../components/Slider";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 // Utils
 import { Colors } from "@/common/utils/constants";
@@ -18,11 +18,13 @@ const BannerSlider = () => {
     return (
         <Stack sx={{ display: "grid", gridTemplateColumns: "8% auto 8%", gridTemplateRows: "1fr" }}>
             <Swiper
-                modules={[Navigation, Pagination]}
+                modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={50}
                 slidesPerView={1}
+                loop
                 // navigation
                 pagination={{ clickable: true }}
+                autoplay={{ delay: 5000 }}
                 style={{ display: "block", width: "100%", gridColumn: "2/3", gridRow: "1" }}
             >
                 <SwiperSlide>
